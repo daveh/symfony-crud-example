@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+<h1>Delete Product</h1>
+
+<p>Are you sure?</p>
+
+<form method="post">
+
+    <button>Yes</button>
+
+    <a href="{{ path('product_show', {'id': id}) }}">No</a>
+
+</form>
+
+{% endblock %}
